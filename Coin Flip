@@ -1,0 +1,17 @@
+# Coin flip simulation until user wants and finally enter number of tails and heads
+from random import randrange
+print("Enter 1 to flip , 0 to stop")
+check=int(input())
+Heads=0
+Tails=0
+while check!=0:
+    n=randrange(0,2)
+    if n==0:
+        print("Heads")
+        Heads+=1
+    else:
+        print("Tails")
+        Tails+=1
+    check=int(input())
+print("Heads : ",Heads)
+print("Tails : ",Tails)
